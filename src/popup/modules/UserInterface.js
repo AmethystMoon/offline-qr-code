@@ -287,7 +287,7 @@ function resizeElements() {
     }
 
     console.info("resize QR code from ", qrLastSize, " to ", newQrCodeSize);
-
+    qrLastSize = newQrCodeSize
     // do not regenerate QR code if an error or so is shown
     setNewQrCodeSize(newQrCodeSize, !placeholderShown);
 }
